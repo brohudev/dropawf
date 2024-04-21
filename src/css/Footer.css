@@ -1,0 +1,27 @@
+footer {
+	width: 100%;
+	margin-top: calc(2 * var(--margin));
+	padding: var(--margin);
+
+	color: var(--primary-2);
+	background-color: var(--bg-secondary);
+}
+.footer-container {
+	width: 100%;
+	max-width: var(--max-width);
+	height: 100%;
+	margin: auto;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: var(--margin);
+}
+.footer-container > * {
+	width: 100%;
+}
+
+.footer-container > small {
+	text-align: center;
+}

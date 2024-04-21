@@ -1,0 +1,49 @@
+.fireButtonHeader {
+  height: 30px;
+  border-top-left-radius: 3%;
+  border-top-right-radius: 3%;
+  background-color: white;
+  
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.fireButton {
+	background-color: var(--red);
+	width: 70px;
+	height: 10px;
+	border-radius: 10px;
+	margin: 10px;
+	font-weight: bold;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.rehireButton {
+	background-color: var(--green);
+	width: 70px;
+	height: 10px;
+	border-radius: 10px;
+	margin: 10px;
+	font-weight: bold;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.reHireButton {
+  background-color: var(--green);
+}
+
+.manageErrorHandler {
+    width: 250px;
+    height: 30px;
+    background-color: black;
+}

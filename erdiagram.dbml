@@ -1,0 +1,128 @@
+// Use DBML to define your database structure
+// Docs: https://dbml.dbdiagram.io/docs
+
+Table Package {
+  PackageID int [pk]
+  Destination int [ref: > Address.AddressID]
+  Origin int [ref: > Address.AddressID]
+  Sender int [ref: > Customer.CustomerID]
+  Recipient int [ref: > Customer.CustomerID]
+  TrackingID string
+  Priority bool
+  Type string
+  Weight double
+  Length double
+  Width double
+  Height double
+  Delivered bool
+  DeliveryRoute int [ref: > DeliveryRoute.RouteID]
+  MailID int [pk]
+  DeliveryRoute int [ref: > DeliveryRoute.RouteID]
+}
+
+
+Table PaymentMethod {
+  MethodID int [pk]
+  Name string [unique]
+}
+
+Table Payment {
+  PaymentID int [pk]
+  Date string
+  Amount double
+  Method int [ref: > PaymentMethod.MethodID]
+  PaymentID int [pk]
+  EmployeeID int [ref: > Employee.EmployeeID]
+}
+
+Table Customer {
+  CustomerID int [pk]
+  Phone string
+  Email string
+  LocationID int [ref: > Address.AddressID]
+  PaymentIDs int [ref: > Payment.PaymentID]
+}
+
+
+Table CardInfo {
+  CardID int [pk]
+  FirstName string
+  LastName string
+  CardNumber string
+  ExpirationDate string
+  CVV int
+  LocationID int [ref: > Address.AddressID]
+}
+
+
+Table Address {
+  AddressID int [pk]
+  StreetNum int
+  StreetName string
+  City string
+  State string
+  Zip int
+  LocationType string
+}
+
+Table Addresses {
+  CustomerID int
+  AddressID int
+}
+
+Table FacilityInfo {
+  FacilityID int [pk]
+  FacilityName string
+  AddressID int [ref: > Address.AddressID]
+}
+
+
+
+
+Table CustomerMail {
+  CustomerID int
+  MailID int
+}
+
+Table CommonCustomer {
+  CommonCustomerID int [pk]
+  CustomerID int
+  FirstName string
+  LastName string
+}
+
+Table CorpCustomer {
+  CorpID int [pk]
+  CorporationName string
+}
+
+Table Event {
+  MailID int
+  EventID int [pk]
+  EventType string
+  Time string
+  LocationID int
+}
+
+Table DeliveryRoute {
+  RouteID int [pk]
+  EmployeeID int [pk]
+  CourierID int
+  StartLocation int [ref: > Address.AddressID]
+  EndLocation int [ref: > Address.AddressID]
+  Schedule string [note: "List of delivery schedule"]
+}
+
+Table Employee {
+  EmployeeID int [pk]
+  EmployeeName string
+  EmployeeRole string
+  EmployeeID int [pk]
+  DeliveryRouteID int [ref: > DeliveryRoute.RouteID]
+}
+
+Table Transaction {
+  TransactionID int [pk]
+  // Other attributes...
+  EmployeeID int [ref: > Employee.EmployeeID]
+}

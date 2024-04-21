@@ -1,0 +1,42 @@
+.calc-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.calc-form-group {
+  margin-bottom: 15px;
+}
+
+.calc-label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.calc-select,
+.calc-input[type="number"],
+.calc-input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.calc-button:hover {
+  background-color: #0056b3;
+}
+
+.calc-result {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.calc-page {
+  display: flex;
+  justify-content: center;
+}
+
+.progress {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

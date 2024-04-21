@@ -1,0 +1,52 @@
+.json-section {
+     border: 1px solid #ccc;
+     border-radius: 5px;
+     padding: 10px;
+     margin-bottom: 20px;
+   }
+   
+   .json-section h2 {
+     font-size: 18px;
+     margin-bottom: 10px;
+   }
+   
+   .json-section ul {
+     list-style-type: none;
+     padding-left: 0;
+     /* justify-content: center; */
+   }
+   
+   .json-section ul li {
+     margin-bottom: 5px;
+     justify-content: center;
+     align-items: center;
+   }
+   
+   .json-section ul li strong {
+     margin-right: 5px;
+   }
+  
+
+   .paymentForm {
+    width: 550px;
+    height: 500px;
+
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    text-align: left;
+   }
+
+   .item {
+    width: 550px;
+    height: 80px;
+
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    text-align: left;
+   }
+
+   .inputBoxes {
+    width: 550px;
+   }

@@ -1,0 +1,150 @@
+.form {
+	width: calc(100% - (var(--margin) * 2));
+	max-width: var(--max-width-medium);
+	padding: var(--margin);
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: var(--margin);
+
+	border: 2px solid var(--border-form);
+	border-radius: 12px;
+	background-color: var(--bg-form);
+}
+
+.poform {
+	width: 45rem;
+	padding: var(--margin);
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: var(--margin);
+
+	border: 2px solid var(--border-form);
+	border-radius: 12px;
+	background-color: var(--bg-form);
+}
+
+.orderhistory {
+	width: 75rem;
+	padding: var(--margin);
+
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: var(--margin);
+
+	border: 2px solid var(--border-form);
+	border-radius: 12px;
+	background-color: var(--bg-form);
+}
+
+.manageEmployeeForm {
+    display: flex;
+    justify-content: center;
+}
+
+/* Form items */
+.form > * {
+	width: 100%;
+}
+.form div {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+}
+.form > .item {
+	align-items: stretch;
+}
+/* end Form items */
+
+.form label {
+	font-size: 1em;
+}
+label.required::after {
+	content: '*';
+	color: var(--red);
+}
+
+/* Inputs */
+.form input,
+.form textarea,
+.form button {
+	font-family: inherit;
+	font-size: 0.75em;
+
+	border: none;
+	border-radius: 5px;
+	outline: none;
+}
+.form input:focus,
+.form textarea:focus,
+.form button:focus {
+	outline: 2px solid var(--orange);
+}
+.form input,
+.form textarea {
+	color: inherit;
+	background-color: var(--bg);
+	border: 1px solid var(--border-form);
+}
+
+.form input {
+	padding: 10px;
+}
+.form input::placeholder {
+	font-style: italic;
+}
+
+.form textarea {
+	height: 100px;
+	padding: 5px 10px;
+	resize: none;
+}
+
+.form button {
+	width: fit-content;
+}
+
+.disabled + input {
+	background-color: var(--border-form);
+}
+/* end Inputs */
+
+div.message {
+	width: fit-content;
+	flex-direction: row;
+	gap: 15px;
+	background-color: var(--bg-message);
+	border-radius: 5px;
+}
+div.message.success {
+	color: var(--green);
+}
+div.message.failure {
+	color: var(--red);
+}
+
+section.success {
+	width: calc(100% - (2 * var(--margin)));
+	padding: 0;
+	text-align: center;
+}
+section.success > * {
+	width: fit-content;
+}
+section.success a:hover {
+	opacity: 1;
+	text-decoration: underline;
+}
+section.success svg {
+	font-size: 100px;
+	color: var(--green);
+}

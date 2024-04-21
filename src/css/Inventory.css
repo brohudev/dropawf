@@ -1,0 +1,7 @@
+.addInventoryButton {
+  width: calc(100% - (var(--margin) * 2));
+  max-width: var(--max-width-medium);
+}
+.addInventoryButton > a {
+  width: auto;
+}

@@ -1,0 +1,38 @@
+.revenue-container {
+  background-color: #f2efe5;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.revenue-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.date-inputs {
+  display: flex;
+  gap: 10px;
+}
+
+input[type="date"] {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+Button {
+  margin-left: 10px;
+}

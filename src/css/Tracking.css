@@ -1,0 +1,437 @@
+.entireForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.trackingForm {
+    width: 50rem;
+	padding: var(--margin);
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: var(--margin);
+
+	border: 2px solid var(--border-form);
+	border-radius: 12px;
+	background-color: var(--bg-form);
+}
+
+.trackingScreenForm {
+    width: 50rem;
+	padding: var(--margin);
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: var(--margin);
+
+	border: 2px solid var(--border-form);
+	border-radius: 12px;
+	background-color: var(--bg-form);
+}
+
+.trackingScreen {
+    width: 600px;
+    height: 265px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.trackingHeader {
+    width: 600px;
+    height: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.headerMargin {
+    width: 550px;
+    height: 25px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.parcel {
+    display: flex;
+    justify-content: inline;
+    align-items: center;
+    font-size: 15px;
+}
+
+.parcelLabel { 
+    padding-right: 58px;
+    color: black;
+}
+
+.parcelData {
+    color: var(--brown);
+    font-weight: bold;
+}
+
+.headerData {
+    width: 600px;
+    height: 30px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.dataMargin {
+    width: 550px;
+    height: 25px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+}
+
+.trackingArea {
+    width: 600px;
+    height: 100px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.trackingBar {
+    width: 550px;
+    height: 70px;
+
+    display: flex;
+    justify-content: inline;
+}
+
+.orderRecieved {
+    width: 50px;
+    height: 70px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.orderProcessed {
+    width: 167px;
+    height: 70px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.orderEnRoute {
+    width: 167px;
+    height: 70px;
+
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.orderDelivered {
+    width: 167px;
+    height: 70px;
+
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.t-line {
+    width: 280px;
+    height: 15px;
+    background-color: rgb(252, 228, 196);
+
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.r-line {
+    width: 280px;
+    height: 15px;
+    background-color: rgb(252, 228, 196);
+
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.l-circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(252, 228, 196);
+    color: var(--brown);
+    font-size: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    left: 1px;
+}
+
+.t-circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(252, 228, 196);
+    color: var(--brown);
+    font-size: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    left: 1px;
+}
+
+.r-circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(252, 228, 196);
+    color: var(--brown);
+    font-size: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    left: 1px;
+}
+
+.trackingStages {
+    width: 600px;
+    height: 70px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    position: relative;
+    left: 5px;
+}
+
+.recievedStage {
+    width: 100px;
+    height: 70px;
+    font-size: 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
+.processingStage {
+    width: 220px;
+    height: 70px;
+    font-size: 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
+.enRouteStage {
+    width: 120px;
+    height: 70px;
+    font-size: 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+
+    position: relative;
+    right: 15px;
+}
+
+.deliveredStage {
+    width: 130px;
+    height: 70px;
+    font-size: 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
+.stageIcons {
+    font-size: 40px;
+    padding-right: 8px;
+    color: var(--brown);
+
+    position: relative;
+    top: 5px;
+}
+
+.l-circle-active {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--brown);
+    color: white;
+    font-size: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    left: 1px;
+}
+
+.r-circle-active {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--brown);
+    color: white;
+    font-size: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    left: 1px;
+}
+
+.r-line-active {
+    width: 280px;
+    height: 15px;
+    background-color: var(--brown);
+
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.t-circle-active {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--brown);
+    color: white;
+    font-size: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    left: 1px;
+}
+
+.t-line-active {
+    width: 280px;
+    height: 15px;
+    background-color: var(--brown);
+
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.travelHistory {
+    width: 600px;
+    border-radius: 10px;
+
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.travelHistoryHeader {
+    width: 600px;
+    height: 50px;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-color: #e6e5e5;
+
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    text-align: left;
+}
+
+.travelTitle {
+    font-size: 20px;
+    margin: 20px;
+    color: var(--brown);
+}
+
+.travelHistoryTable {
+    width: 600px;
+}
+
+.travelDateHeaders {
+    width: 600px;
+    font-size: 14px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
+.travelHistoryRows {
+    width: 600px;
+    padding-top: 25px;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-color: #e6e5e5;
+
+}
+
+.travelHistoryDates {
+    width: 400px;
+}
+
+.travelHistoryAddressesData {
+    width: 600px;
+}
+
+.travelHistoryData {
+    gap: 50px;
+    font-size: 12px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.travelDataTime {
+    width: 100px;
+}
+
+.travelDataCityState {
+    width: 100px;
+}
+
+.travelDataEventType {
+    width: 100px;
+}
+
+.travelHistoryMargin {
+    height: 25px;
+}

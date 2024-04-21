@@ -1,0 +1,7 @@
+export { default as OrderHistory } from "./OrderHistory"
+export { default as ViewInventory } from "./ViewInventory"
+export { default as Reports } from "./Reports"
+export { default as OrderReport } from "./OrderReport"
+export { default as Inventory } from "./Inventory"
+export { default as Employees } from "./Employees"
+export { default as OfficeReport } from "./OfficeReport"
