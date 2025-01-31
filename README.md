@@ -1,53 +1,67 @@
-# Dropawf
-### A Courier Project Full Stack Web App Project for COSC 3380 Database Systems
+# 📦 Dropawf  
 
-## Mini-world
-Dropawf is a full-stack database web application project created to design and implement a database system for a courier service complete with shipping services, package tracking, product sales, reporting, and customer and employee management.
+A full-stack courier service web application designed for **COSC 3380: Database Systems**. Dropawf provides package tracking, shipping services, product sales, reporting, and customer/employee management.  
 
-## Technologies Used
- - Frontend: React.js
- - Backend: Node.js
- - Database: MySQL
- - Authentification: JavaScript Cookies
- - Deployment: Azure. Cloudflare
- - Version control: Git, GitHub
+## 🚀 Tech Stack  
+- **Frontend:** React.js  
+- **Backend:** Node.js  
+- **Database:** MySQL  
+- **Authentication:** JavaScript Cookies  
+- **Deployment:** Azure, Cloudflare  
+- **Version Control:** Git, GitHub  
 
+## 🛠️ Setup & Installation  
 
-## Running the Project:
-
-In the project directory, you can run:
-
-### `npm  run start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The app takes in one environment variable that is defined as such:
-```
-REACT_APP_BASE_URL= “<HOST_URL>”
-```
-This indicates the base url to use for the backend server. it can be set to either `http://localhost:8080` or the url of the deployed backend. (this assumes that the backend is up and accepting packets when the website is run).
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm run server:dev`
-
-Launches the backend web server on [http://localhost:8080](http://localhost:8080).\
-It takes in 5 `DB_` env parameters which are credentials for the SQL server that the development backend will connect to.\
-You may define your own at will. they are:
-```
-DB_HOST
-DB_PORT
-DB_USER
-DB_PASSWORD
-DB_DATABASE
+### 1️⃣ Clone the Repository  
+```sh
+git clone https://github.com/your-username/dropawf.git
+cd dropawf
 ```
 
-### `npm run build`
+### 2️⃣ Install Dependencies  
+```sh
+npm install
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 3️⃣ Environment Variables  
+Create a `.env` file and define the necessary variables:  
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+#### Frontend  
+```sh
+REACT_APP_BASE_URL="<HOST_URL>"
+```
+Set `<HOST_URL>` to either `http://localhost:8080` (for local development) or your deployed backend URL.  
+
+#### Backend  
+```sh
+DB_HOST=<your-db-host>
+DB_PORT=<your-db-port>
+DB_USER=<your-db-user>
+DB_PASSWORD=<your-db-password>
+DB_DATABASE=<your-db-name>
+```
+
+### 4️⃣ Running the Project  
+
+#### Start the Frontend  
+```sh
+npm run start
+```
+- Runs the app in development mode.  
+- Open [http://localhost:3000](http://localhost:3000) in your browser.  
+
+#### Start the Backend  
+```sh
+npm run server:dev
+```
+- Runs the backend server on `http://localhost:8080`.  
+- Ensure your database is up and accepting connections.  
+
+#### Build for Production  
+```sh
+npm run build
+```
+- Creates an optimized production build in the `build/` directory.  
+
+## 📜 License  
+This project is licensed under the [MIT License](LICENSE).
